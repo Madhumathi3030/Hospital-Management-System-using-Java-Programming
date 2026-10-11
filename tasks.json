@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Backend (Java)",
+      "type": "shell",
+      "command": "cd backend && mvn spring-boot:run",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend",
+      "type": "shell",
+      "command": "cd frontend && npm start",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Both",
+      "dependsOn": ["Backend (Java)", "Frontend"],
+      "problemMatcher": []
+    }
+  ]
+}
